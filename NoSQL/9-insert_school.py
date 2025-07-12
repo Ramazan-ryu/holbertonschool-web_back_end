@@ -5,5 +5,5 @@ Prototype: def insert_school(mongo_collection, **kwargs):
 mongo_collection will be the pymongo collection object
 Returns the new _id'''
 def insert_school(mongo_collection, **kwargs):
-    pymongo =  mongo_collection.insert_id()
-    return pymongo
+    pymongo =  mongo_collection.insertOne(**kwargs)
+    return pymongo.insert_id
