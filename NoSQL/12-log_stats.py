@@ -10,7 +10,6 @@ second line: Methods:
 one line with the number of documents with:
 method=GET
 path=/status'''
-
 from pymongo import MongoClient
 
 
