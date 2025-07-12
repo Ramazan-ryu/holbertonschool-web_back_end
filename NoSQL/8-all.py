@@ -11,5 +11,5 @@ def list_all(mongo_collection):
         mongo_collection (object):
         pymongo collection object
     """
-    pymongo = mongo_collection.find({})
+    pymongo = list(mongo_collection.find())
     return pymongo
